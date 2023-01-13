@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- css link  -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- javascript link  -->
+    <script src="./js/index.js" defer></script>
+    <title>OOP Shopping</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header part  -->
+      <div class="header">
+        <div class="left">
+          <h1 class="logo">Online store</h1>
+        </div>
+        <div class="right">
+          <div class="search">
+            <input type="text" placeholder="search..." />
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+          <div class="shopping">
+            <span class="shop__icon"
+              ><i class="fa-sharp fa-solid fa-basket-shopping"></i
+            ></span>
+            <span class="shop__count">8</span>
+          </div>
+        </div>
+
+        <!-- added cart part  -->
+        <div class="shop__cashier">
+          <div class="added__products">
+            <!-- <div class="product">
+              <img
+                src="https://res.cloudinary.com/ghazni/image/upload/v1663570537/motor/helm2_x5ia2w.png"
+                alt=""
+              />
+              <div class="texts">
+                <h1>Studds SHIFTER D2 Full Face Helmet</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <span class="price">67$</span>
+                <div class="remove">
+                  <button>Remove</button>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <button class="removeAll btn">Remove All</button>
+          <div class="total__price">
+            <div class="price">
+              <h1>Total Price</h1>
+              <h1 class="total">200$</h1>
+            </div>
+            <button class="btn">Process the Payment</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- products part  -->
+      <div class="products">
+        <!-- <div class="product">
+          <div class="image">
+            <img
+              src="https://res.cloudinary.com/ghazni/image/upload/v1663570537/motor/helm2_x5ia2w.png"
+              alt="product"
+            />
+            <div class="buttons">
+              <span class="addProduct"
+                ><i class="fa-solid fa-cart-plus"></i
+              ></span>
+              <span class="seeProduct"><i class="fa-solid fa-eye"></i></span>
+            </div>
+          </div>
+          <div class="product__body">
+            <h1>Studds SHIFTER D2 Full Face Helmet</h1>
+            <div class="stars">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+            </div>
+            <span class="price">67$</span>
+            <p class="disc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- single products  -->
+      <div class="single__product" data-cartDetail>
+        <div class="product" data-singleProduct>
+          <!-- <img
+            src="https://res.cloudinary.com/ghazni/image/upload/v1663570537/motor/helm2_x5ia2w.png"
+            alt="product"
+          />
+          <div class="details">
+            <h1>Studds SHIFTER D2 Full Face Helmet</h1>
+            <p style="padding: 0.5rem 0">Description :</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ea
+              delectus quisquam adipisci aut necessitatibus vero assumenda ipsum
+              blanditiis nobis.
+            </p>
+            <div class="stars">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+            </div>
+            <p>67$</p>
+            <div class="add">
+                <button class="addProduct"><span class="addProduct"
+                ><i class="fa-solid fa-cart-plus"></i
+              > </span>Add To Cart</button>
+            </div>
+          </div> -->
+        </div>
+        <div class="shadow">
+          <span class="close"><i class="fa-solid fa-square-xmark"></i></span>
+        </div>
+      </div>
+
+      <!-- footer part  -->
+      <footer class="footer">
+        <p>&copy; Design and Developed by Milad Tech 2023</p>
+      </footer>
+    </div>
+  </body>
+</html>
