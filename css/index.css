@@ -33,6 +33,12 @@ body{
     overflow-x: hidden;
 }
 
+@media(max-width : 950px){
+    .container {
+        width: 90%;
+    }
+}
+
 .footer{
     background-color: var(--yellow);
     text-align: center;

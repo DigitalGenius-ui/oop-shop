@@ -50,9 +50,17 @@
 
 .texts .remove{
     text-align: right;
+    /* new line  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
 }
 
-.remove button{
+/* new code */
+.remove .increment, .decrement{
+    width: 1.5rem;
+    height: 1.5rem;
     cursor: pointer;
     border: none;
     background-color: var(--yellow);
@@ -60,7 +68,24 @@
     border-radius: 5px;
 }
 
-.remove button:hover{
+.remove .increment i,
+.decrement > i {
+    pointer-events: none;
+    font-size: 0.7rem;
+}
+
+/* change name  */
+.remove .delete{
+    cursor: pointer;
+    border: none;
+    background-color: var(--yellow);
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+}
+
+/* new code  */
+.remove .increment:hover,
+.decrement:hover, .delete:hover{
     opacity: 0.7;
 }
 
@@ -89,4 +114,8 @@
 
 .btn:hover {
     background-color: var(--hover);;
+}
+
+#paypal-button-container{
+    padding-top: 1rem;
 }
