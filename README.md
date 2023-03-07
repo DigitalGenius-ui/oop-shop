@@ -8,6 +8,8 @@
 
 [Video Tutorial](https://youtu.be/w_uvHSGrkfs) 
 
+[Rest API](https://github.com/DigitalGenius-ui/OOP-SHOP-API)
+
 
 ## Features
 
