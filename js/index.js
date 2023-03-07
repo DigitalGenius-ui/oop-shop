@@ -35,7 +35,9 @@ let cart = Storage.getStorage();
 class fetchData {
   async getProducts() {
     try {
-      const res = await fetch("http://localhost:5000/api/products");
+      const res = await fetch(
+        "https://oop-shop-api-production.up.railway.app/api/products"
+      );
       const data = await res.json();
       return data;
     } catch (error) {
@@ -85,7 +87,7 @@ class UI {
         </div>`;
     });
 
-    productCart.innerHTML = cart.join("");
+    productCart.innerHTML = products ? cart.join("") : "Loading...";
   }
 
   findButtons(products) {
@@ -284,6 +286,8 @@ class UI {
         qty--;
         if (qty < 1) {
           qty = 1;
+        } else if (qty === 1) {
+          return this.deleteProduct(btnId);
         }
       }
       return { ...item, qty };
