@@ -35,9 +35,7 @@ let cart = Storage.getStorage();
 class fetchData {
   async getProducts() {
     try {
-      const res = await fetch(
-        "https://oop-shop-api-production.up.railway.app/api/products"
-      );
+      const res = await fetch("data.json");
       const data = await res.json();
       return data;
     } catch (error) {
