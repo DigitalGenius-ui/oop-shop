@@ -23,7 +23,7 @@
 
 Online Store is an online shopping store that sells Motor's equipments. This Project is beginners friendly and the junior web developers will dive deeply into Object Oriented Programming in Javascript. Topics such as Debouncing, event delegation, spread operators and much more has been covered. The product's list is coming from a rest full api build Using Node JS and hosted in Railway. In this application user can see all the products list, add to cart, remove from cart,increment & decrement it.
 
-Technologies
+## Technologies
 
 - [HTML5]()
 - [CSS3]()
